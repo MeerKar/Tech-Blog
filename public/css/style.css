@@ -1,0 +1,143 @@
+/* Button Styles */
+.button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: rgb(67, 1, 1);
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.button:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgb(26, 2, 2);
+    padding: 0;
+}
+
+.header-nav {
+    padding: 0;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-nav li {
+    margin-left: 15%;
+    margin-right: -10%;
+    color: #F0F0F0;
+}
+
+/* Main Title Styles */
+.main-title a {
+    background-color: grey;
+    padding: 5px;
+    margin-top: 1%;
+    margin-left: 23%;
+    display: inline-block;
+    border-radius: 7px 20px;
+    box-shadow: 5px 5px 50px #a31f1f;
+    text-decoration: none;
+}
+
+/* Post Styles */
+.post-container {
+    background-color: grey;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.post-title {
+    background-color: rgb(26, 2, 2);
+    color: #fff;
+    padding: 5px;
+}
+
+.post-content {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.post-info {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.post-info .date {
+    font-style: italic;
+}
+
+/* Comment Styles */
+.comment-text {
+    display: inline-block;
+    background-color: #F0F0F0;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+#comment-form {
+    padding-left: 5px;
+}
+
+.comment-content {
+    padding: 10px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+
+.comment-body {
+    background-color: #F0F0F0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.comment-author {
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgb(26, 2, 2);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links a {
+    color: rgb(26, 2, 2);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

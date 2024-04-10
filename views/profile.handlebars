@@ -1,0 +1,61 @@
+<!-- Dashboard Header -->
+<div class="dashboard-header">
+    <div class="row">
+        <div class="col-auto">
+            <h2>Welcome to your Dashboard, {{username}}!</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Create New Post Section -->
+<div class="create-post-section">
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Create a New Post:</h3>
+
+            <form class="form new-post-form">
+           
+                <input type="hidden" id="user-id" value="{{user_id}}">
+
+                <div class="form-group">
+                    <label for="post-title">Title:</label>
+                    <input class="form-input" type="text" id="post-title" name="post-title" />
+                </div>
+                <div class="form-group">
+                    <label for="post-desc">Content:</label>
+                    <textarea class="form-input" id="post-desc" name="post-desc"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+
+   
+        {{#if posts.length}}
+        <div class="col-md-6 post-list">
+            <h3>Current posts:</h3>
+
+            
+            {{#each posts as |post|}}
+            <div class="post-item">
+                <div class="row mb-2">
+                    <div class="col-md-8">
+                        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+                    </div>
+                    <!-- Edit and Delete Buttons -->
+                    <div class="col-md-2">
+                        <button class="btn btn-sm btn-danger" data-id="{{post.id}}" data-action="delete">DELETE</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-sm btn-warning" data-id="{{post.id}}" data-action="edit">Edit</button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+</div>
+
+<script src='/js/profile.js'></script>
