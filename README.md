@@ -55,3 +55,9 @@ WHEN idle on the site for more than a set time
 THEN able to view posts and comments but I am prompted to log in again before add, update, or delete posts
 
 ## Mock-Up
+
+You can find the Deployed page here : https://techblo2-81832bdf08b4.herokuapp.com/
+
+
+
+Credits: John Young
